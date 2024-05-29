@@ -1,4 +1,4 @@
-# Five Card Poker
+# Poker Hand Application
 
 Five Card Draw Poker is a console-based Java application that deals and evaluates poker hands for a simplified version of the five-card draw variant. In this variant, each player receives a hand of 5 cards and competes against each other based on the standard 5 card poker hand strength.
 
@@ -23,53 +23,55 @@ The standard 5 card poker hand strengths applied in this application, listed in 
 9. High Cards
 
 ##Project Structure
-
+ 
 ```
-FiveCardPoker/
+PokerHandApp/
 │
-├──src/
-│   └──PokerHandCardGame/
-│       ├── Card.java
-│       ├── CardTest.java
-│       ├── CardUtilities.java
-│       ├── CardUtilitiesTest.java
-│       ├── Deck.java
-│       ├── DeckTest.java
-│       ├── package-info.java
-│       └── PokerHandsApp.java
-├──bin/
-├── compile_and_run.bat
+├── FiveCardPoker/
+│   ├── src/
+│   │   └── PokerHandCardGame/
+│   │       ├── Card.java
+│   │       ├── CardTest.java
+│   │       ├── CardUtilities.java
+│   │       ├── CardUtilitiesTest.java
+│   │       ├── Deck.java
+│   │       ├── DeckTest.java
+│   │       ├── package-info.java
+│   │       └── PokerHandsApp.java
+│   ├── bin/
+│   ├── lib/
+│   ├── compile_and_run.bat
+│   └── README.md
 ├── .project
 ├── .classpath
 └── README.md
 
 ```
- 
-1. **src/:** This directory typically contains the source code files for the project.
+### `FiveCardPoker/` 
+This folder contains the main source code, binaries, dependencies, and scripts related to the poker hand application.
 
-    - **PokerHandCardGame/:** This subdirectory represents the package structure of the project.
-    
-        - **Card.java:** Source code file for the `Card` class.
-        - **CardTest.java:** Source code file for testing the `Card` class.
-        - **CardUtilities.java:** Source code file for the `CardUtilities` class.
-        - **CardUtilitiesTest.java:** Source code file for testing the `CardUtilities` class.
-        - **Deck.java:** Source code file for the `Deck` class.
-        - **DeckTest.java:** Source code file for testing the `Deck` class.
-        - **package-info.java:** Package-level documentation.
-        - **PokerHandsApp.java:** Source code file for the main application class.
+- **`src/`:** This directory holds the source code of the application.
+  - **`PokerHandCardGame/`:** This package contains the Java classes related to the poker game implementation.
+    - `Card.java`: Defines the `Card` class representing a playing card.
+    - `CardTest.java`: Contains unit tests for the `Card` class.
+    - `CardUtilities.java`: Contains utility methods for evaluating poker hands.
+    - `CardUtilitiesTest.java`: Contains unit tests for the `CardUtilities` class.
+    - `Deck.java`: Defines the `Deck` class representing a deck of cards.
+    - `DeckTest.java`: Contains unit tests for the `Deck` class.
+    - `package-info.java`: Provides package-level documentation.
+    - `PokerHandsApp.java`: Main class to run the poker hand simulation.
 
-2. **bin/:** This directory typically contains the compiled bytecode files generated from the source code.
+- **`bin/`:** This directory is intended to hold compiled binary files, but it's currently empty.
 
-    - **PokerHandCardGame/:** This subdirectory mirrors the package structure and contains the compiled `.class` files.
+- **`lib/`:** This directory can be used to store external libraries or dependencies. It's currently empty.
 
-3. **compile_and_run.bat:** A batch file used to compile and run the application.
-4. **.project:** An Eclipse project file that defines the project structure and configuration.
-5. **.classpath:** An Eclipse classpath file that specifies the project's classpath settings and dependencies.
-6. **README.md:** A markdown file containing instructions or information about the project.
+- **`compile_and_run.bat`:** This batch file contains commands to compile and run the application.
 
-Overall, this structure adheres to a common layout for a Java project, with separate directories for 
-source code (`src/`) and compiled files (`bin/`). The presence of `.project` and `.classpath` files suggests 
-that the project is intended to be used with the Eclipse IDE.
+- **`README.md`:** This markdown file provides documentation for the project.
+
+### `.project` and `.classpath`
+
+These files are specific to Eclipse IDE and define project settings and classpath configurations, respectively.
 
 
 ## Prerequisites
@@ -82,12 +84,12 @@ that the project is intended to be used with the Eclipse IDE.
    ```   
 
 ## Running the Application
-## Run using Batch file
+### Run using Batch file
 **To run the application using compile_and_run.bat batch file**
 To run the application by double-clicking the `compile_and_run.bat` file, follow these instructions:
 
 1. Navigate to the Project Directory:
-   - Locate the `compile_and_run.bat` file in the project directory.
+   - Locate the `compile_and_run.bat` file in the project directory. Directory: PokerHandApp/FiveCardPoker
 
 2. Double-click the Batch File:
    - Double-click the `compile_and_run.bat` file.
@@ -104,14 +106,14 @@ To run the application by double-clicking the `compile_and_run.bat` file, follow
 By following these instructions, you should be able to run the `compile_and_run.bat` file by double-clicking it, allowing you to execute the application without using the command prompt.
 
 
-## Run using command prompt
+### Run using command prompt
 **To run the application using command prompt, follow these instructions:**
-1. Navigate to the Project Directory:
+1. Navigate to the Project Directory: PokerHandApp/FiveCardPoker
    - Open a command prompt (or terminal) on your system.
    - Use the `cd` command to navigate to the directory where the `compile_and_run.bat` file is located.
    - For example:
      ```
-     cd path/to/PokerHandCardGame
+     cd path/to/PokerHandApp/FiveCardPoker/
      ```
 
 2. Run the Batch File:
@@ -135,7 +137,7 @@ By following these instructions, you should be able to run the `compile_and_run.
 If you encounter any errors or issues during the execution, review the error messages displayed in the command prompt for troubleshooting.
 
 
-## Run using an IDE
+### Run using an IDE
 **To run the application using an IDE, follow these instructions:**
 1. Open the Project in Your IDE:
    - First, ensure that you have the Java Development Kit (JDK) installed on your system.
