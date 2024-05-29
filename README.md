@@ -86,7 +86,7 @@ These files are specific to Eclipse IDE and define project settings and classpat
 ## Getting Started
 1. Clone or download this repository to your local machine
    ```
-   git clone https://github.com/yourusername/FiveCardDrawPoker.git
+   git clone https://github.com/KatlegoRaymond/PokerHandApp.git
    ```   
 
 ## Running the Application
