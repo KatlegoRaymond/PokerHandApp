@@ -40,14 +40,20 @@ PokerHandApp/
 │   │       └── PokerHandsApp.java
 │   ├── bin/
 │   ├── lib/
-│   ├── compile_and_run.bat
-│   └── README.md
+│   └── compile_and_run.bat
 ├── .project
 ├── .classpath
 └── README.md
 
 ```
-### `FiveCardPoker/` 
+
+
+### FiveCardPoker/
+ 
+### src
+
+The `src` directory contains the Java source files organized under the `PokerHandCardGame` package.
+ 
 This folder contains the main source code, binaries, dependencies, and scripts related to the poker hand application.
 
 - **`src/`:** This directory holds the source code of the application.
